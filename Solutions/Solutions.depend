@@ -6,11 +6,12 @@
 	<stdlib.h>
 	<stdio.h>
 
-1467123059 source:e:\codeblocks\solutions-of-linear-systems\solutions\main.c
+1467131736 source:e:\codeblocks\solutions-of-linear-systems\solutions\main.c
 	"base.h"
 
-1467121959 source:e:\codeblocks\solutions-of-linear-systems\solutions\solutions.c
+1467132446 source:e:\codeblocks\solutions-of-linear-systems\solutions\solutions.c
 	"solutions.h"
+	"base.h"
 
-1467122869 e:\codeblocks\solutions-of-linear-systems\solutions\solutions.h
+1467127360 e:\codeblocks\solutions-of-linear-systems\solutions\solutions.h
 
