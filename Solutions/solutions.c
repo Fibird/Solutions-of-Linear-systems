@@ -45,7 +45,7 @@ void solution_set(int row, int col, double **a, double *b)
     for (i = col - 1; i >= 0; i--)
     {
         t = 0.0;    // Must be cleared to 0
-        for (j = i + 1; j <= col; j++)
+        for (j = i + 1; j < col; j++)
         {
             if (i == col - 1)
             {
