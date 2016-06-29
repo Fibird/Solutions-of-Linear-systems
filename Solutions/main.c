@@ -1,6 +1,5 @@
-//#include <stdio.h>
-//#include <stdlib.h>
 #include "base.h"
+#include "solutions.h"
 
 int main()
 {
