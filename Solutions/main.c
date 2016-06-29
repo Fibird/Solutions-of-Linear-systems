@@ -13,7 +13,7 @@ int main()
     while (row != col)
     {
         // row must be equal to col
-        printf("Format Error! Please check your input!");
+        printf("Format Error! Please check your input!\n");
         exit(EXIT_FAILURE);
     }
     // Memory Allocation
@@ -35,7 +35,14 @@ int main()
     }
     // Use LU reduction which don't swap lines
     GR(row, col, A, b);
-
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            printf("%lf ", A[i][j]);
+        }
+        printf("\n");
+    }
     printf("This is Matrix L:\n");
     output_L_matrix(row, col, A);
     printf("This is Matrix U:\n");
@@ -49,7 +56,7 @@ int main()
 
 // Experiment Data
 /*matrix1
-3X3
+3*3
 2 3 1
 4 1 4
 3 4 6
@@ -60,7 +67,7 @@ int main()
 */
 
 /*matrix2
-3X3
+3*3
 6 -4 2
 4 2 1
 2 -1 1
@@ -71,7 +78,7 @@ int main()
 */
 
 /*matrix3
-4X4
+4*4
 10 -7 0 1
 -3 2.099999 6 2
 5 -1 5 -1
