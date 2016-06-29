@@ -35,14 +35,7 @@ int main()
     }
     // Use LU reduction which don't swap lines
     GR(row, col, A, b);
-    for (i = 0; i < row; i++)
-    {
-        for (j = 0; j < col; j++)
-        {
-            printf("%lf ", A[i][j]);
-        }
-        printf("\n");
-    }
+
     printf("This is Matrix L:\n");
     output_L_matrix(row, col, A);
     printf("This is Matrix U:\n");
