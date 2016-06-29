@@ -1,4 +1,4 @@
 # Solutions of Linear systems
 
-## unierse solution
+## universe solution
 
