@@ -1,5 +1,7 @@
 #include "base.h"
 
+SWAP_VALUES(int)
+SWAP_VALUES(double)
 double** memory_allocation(int row, int col, double **a)
 {
     int i;
@@ -64,3 +66,21 @@ void output_U_matrix(int row, int col, double**a)
         printf("\n");
     }
 }
+
+int select_pivot(int row, int col, double **a, int *p, double *b)
+{
+    int i;
+    int t = 0;
+
+    for (i = 1; i < row; i++)
+    {
+        if (fabs(a[t][col]) < fabs(a[i][col]))
+        {
+            t = i;
+            int_swap(&p[t], &p[i]);
+            double_swap(&b[t], &b[i]);
+        }
+    }
+    return t;
+}
+
