@@ -1,17 +1,19 @@
 # depslib dependency file v1.0
-1467123256 source:e:\codeblocks\solutions-of-linear-systems\solutions\base.c
+1467174646 source:e:\codeblocks\solutions-of-linear-systems\solutions\base.c
 	"base.h"
 
-1467122755 e:\codeblocks\solutions-of-linear-systems\solutions\base.h
+1467174756 e:\codeblocks\solutions-of-linear-systems\solutions\base.h
 	<stdlib.h>
 	<stdio.h>
+	<math.h>
 
-1467132764 source:e:\codeblocks\solutions-of-linear-systems\solutions\main.c
+1467173920 source:e:\codeblocks\solutions-of-linear-systems\solutions\main.c
 	"base.h"
+	"solutions.h"
 
-1467156599 source:e:\codeblocks\solutions-of-linear-systems\solutions\solutions.c
+1467172435 source:e:\codeblocks\solutions-of-linear-systems\solutions\solutions.c
 	"solutions.h"
 	"base.h"
 
-1467127360 e:\codeblocks\solutions-of-linear-systems\solutions\solutions.h
+1467174461 e:\codeblocks\solutions-of-linear-systems\solutions\solutions.h
 

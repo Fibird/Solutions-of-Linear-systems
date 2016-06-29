@@ -1,6 +1,5 @@
-//#include <stdio.h>
-//#include <stdlib.h>
 #include "base.h"
+#include "solutions.h"
 
 int main()
 {
@@ -35,7 +34,7 @@ int main()
         scanf("%lf", &b[i]);
     }
     // Use LU reduction which don't swap lines
-    no_swap_GR(row, col, A);
+    GR(row, col, A, b);
 
     printf("This is Matrix L:\n");
     output_L_matrix(row, col, A);
@@ -49,7 +48,7 @@ int main()
 }
 
 // Experiment Data
-/*matrix
+/*matrix1
 3X3
 2 3 1
 4 1 4
@@ -58,4 +57,27 @@ int main()
 
 /*b
 -4 9 0
+*/
+
+/*matrix2
+3X3
+6 -4 2
+4 2 1
+2 -1 1
+*/
+
+/*b
+-2 4 -1
+*/
+
+/*matrix3
+4X4
+10 -7 0 1
+-3 2.099999 6 2
+5 -1 5 -1
+2 1 0 2
+*/
+
+/*b
+8 5.900001 5 1
 */

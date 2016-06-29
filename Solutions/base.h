@@ -6,10 +6,25 @@
 *****************************************************/
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
+
+// Swaps values of element
+#define SWAP_VALUES(type)       \
+void type##_swap(type *l, type *r)  \
+{                   \
+    type t;         \
+    t = *l;         \
+    *l = *r;        \
+    *r = t;         \
+}
+
 // Memory Allocation
 double** memory_allocation(int, int, double**);
-// Output matrix L
+// Outputs matrix L
 void output_L_matrix(int, int, double**);
-// Output matrix U
+// Outputs matrix U
 void output_U_matrix(int, int, double**);
+// Selects the pivot and reorders b
+int select_pivot(int row, int col, double **a, int* p, double *b);
+
 #endif // BASE_H_INCLUDED
