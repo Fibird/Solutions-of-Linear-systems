@@ -8,8 +8,8 @@ int main()
     int row, col;
     int i, j;
 
-    printf("Please enter the size of your matrix(row X col): ");
-    scanf("%dX%d", &row, &col);
+    printf("Please enter the size of your matrix(row*col): ");
+    scanf("%d*%d", &row, &col);
     while (row != col)
     {
         // row must be equal to col
