@@ -1,4 +1,5 @@
 #include "base.h"
+#include "iterative.h"
 
 int main()
 {
@@ -6,6 +7,7 @@ int main()
     double *b, *x;      // Vector b and initiative x
     int row, col;
     int i, j;
+    int t = 7;              // Times of iterative
 
     printf("Please enter the size of your matrix(row*col): ");
     scanf("%d*%d", &row, &col);
@@ -37,9 +39,16 @@ int main()
     {
         x[i] = 0.0;
     }
-    // Use iterative method
-    iterative_method(row, col, A, b, x);
 
+    // Use iterative method
+    iterative_method(row, col, A, b, x, t);
+
+    printf("The solution set is:\n");
+    for (i = 0; i < row; i++)
+    {
+        printf("%lf ", x[i]);
+    }
+    printf("\n");
     free(A);
     free(b);
     return 0;

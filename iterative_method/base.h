@@ -11,5 +11,4 @@
 // Memory Allocation
 double** memory_allocation(int, int, double**);
 
-
 #endif // BASE_H_INCLUDED

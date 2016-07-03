@@ -1,20 +1,22 @@
 #include "iterative.h"
 
-void iterative_method(int row, int col, double **a, double *b, double *x)
+void iterative_method(int row, int col, double **a, double *b, double *x, int t)
 {
-    int i, j;
+    int i, j, k;
     double sum = 0.0;
-
-    for (i = 0; i < row; i++)
+    for (k = 0; k < t; k++)
     {
-        sum = 0.0;      // Sum must be cleared to 0
-        for (j = 0; j < col; j++)
+        for (i = 0; i < row; i++)
         {
-            if (j == i)
-                continue;
-            sum += a[i][j] * x[j];
+            sum = 0.0;      // Sum must be cleared to 0
+            for (j = 0; j < col; j++)
+            {
+                if (j == i)
+                    continue;
+                sum += a[i][j] * x[j];
+            }
+            x[i] = (b[i] - sum) / a[i][i];
         }
-        x[i] = (b[i] - sum) / a[i][i];
     }
 }
 
