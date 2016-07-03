@@ -18,7 +18,7 @@ int main()
     }
     // Memory Allocation
     A = memory_allocation(row, col, A);
-    b = (double*) malloc(col * sizeof(double));
+    b = (double*) malloc(row * sizeof(double));
     // Inputs data
     printf("Please enter the data of yout matrix:\n");
     for (i = 0; i < row; i++)
@@ -29,7 +29,7 @@ int main()
         }
     }
     printf("Please enter the right value of systems:\n");
-    for (i = 0; i < col; i++)
+    for (i = 0; i < row; i++)
     {
         scanf("%lf", &b[i]);
     }
