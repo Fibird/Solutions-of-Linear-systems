@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1467559760 source:e:\codeblocks\solutions-of-linear-systems\iterative_method\base.c
+	"base.h"
+
+1467559752 e:\codeblocks\solutions-of-linear-systems\iterative_method\base.h
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+
+1467559368 source:e:\codeblocks\solutions-of-linear-systems\iterative_method\iterative.c
+	"iterative.h"
+
+1467560137 e:\codeblocks\solutions-of-linear-systems\iterative_method\iterative.h
+	"base.h"
+
+1467560120 source:e:\codeblocks\solutions-of-linear-systems\iterative_method\main.c
+	"base.h"
+
