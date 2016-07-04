@@ -39,9 +39,10 @@ int main()
     {
         x[i] = 0.0;
     }
-
-    // Use iterative method
+    // Use Jacobi iterative method
     J_iterative_method(row, col, A, b, x, t);
+    // Use Gsuss-Seidel iterative method
+    //GS_iterative_method(row, col, A, b, x, t);
 
     printf("The solution set is:\n");
     for (i = 0; i < row; i++)
@@ -53,3 +54,14 @@ int main()
     free(b);
     return 0;
 }
+
+/*test data
+8 -3 2
+4 11 -1
+6 3 12
+ */
+/*b
+20
+33
+36
+ */
