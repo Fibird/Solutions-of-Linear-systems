@@ -41,7 +41,7 @@ int main()
     }
 
     // Use iterative method
-    iterative_method(row, col, A, b, x, t);
+    J_iterative_method(row, col, A, b, x, t);
 
     printf("The solution set is:\n");
     for (i = 0; i < row; i++)

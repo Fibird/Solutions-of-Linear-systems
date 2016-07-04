@@ -1,6 +1,6 @@
 #include "iterative.h"
 
-void iterative_method(int row, int col, double **a, double *b, double *x, int t)
+void J_iterative_method(int row, int col, double **a, double *b, double *x, int t)
 {
     int i, j, k;
     double sum = 0.0;
@@ -19,4 +19,6 @@ void iterative_method(int row, int col, double **a, double *b, double *x, int t)
         }
     }
 }
+
+
 
