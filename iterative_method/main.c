@@ -6,7 +6,7 @@ int main()
     double **A = NULL;
     double *b, *x;      // Vector b and initiative x
     int row, col;
-    int i, j;
+    double i, j;
     int t = 7;              // Times of iterative
 
     printf("Please enter the size of your matrix(row*col): ");
@@ -22,22 +22,28 @@ int main()
     b = (double*) malloc(row * sizeof(double));
     x = (double*) malloc(row * sizeof(double));
     // Inputs data
-    printf("Please enter the data of yout matrix:\n");
-    for (i = 0; i < row; i++)
+    //printf("Please enter the data of your matrix:\n");
+    for (i = 1.0; i <= row; i++)
     {
-        for (j = 0; j < col; j++)
+        for (j = 1.0; j <= col; j++)
         {
-            scanf("%lf", &A[i][j]);
+            //scanf("%lf", &A[i][j]);
+            A[(int)(i - 1)][(int)(j - 1)] = 1 / (i + j - 1);
         }
     }
-    printf("Please enter the right value of systems:\n");
-    for (i = 0; i < row; i++)
+    //printf("Please enter the right value of systems:\n");
+    for (i = 1.0; i <= row; i++)
     {
-        scanf("%lf", &b[i]);
+        //scanf("%lf", &b[i]);
+        b[(int)(i - 1)] = 0;   // clears array b
+        for (j = 1.0; j <= col; j++)
+        {
+            b[(int)(i - 1)] += 1 / (i + j - 1);
+        }
     }
-    for (i = 0; i < row; i++)
+    for (i = 0.0; i < row; i++)
     {
-        x[i] = 0.0;
+        x[(int)i] = 0.0;
     }
     // Use Jacobi iterative method
     //J_iterative_method(row, col, A, b, x, t);
@@ -47,9 +53,9 @@ int main()
     SOR_iterative_method(row, col, A, b, x, t);
 
     printf("The solution set is:\n");
-    for (i = 0; i < row; i++)
+    for (i = 0.0; i < row; i++)
     {
-        printf("%lf ", x[i]);
+        printf("%lf ", x[(int)i]);
     }
     printf("\n");
     free(A);
